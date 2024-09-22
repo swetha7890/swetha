@@ -1,11 +1,15 @@
-Num = int(input("Enter a value:"))  
-Temp = num  
-Rev = 0  
-while(num > 0):  
-    dig = num % 10  
-    revrev = rev * 10 + dig  
-    numnum = num // 10  
-if(temp == rev):  
-    print("This value is a palindrome number!")  
-else:  
-    print("This value is not a palindrome number!")
+# Program to check if a string is palindrome or not
+
+my_str = 'aIbohPhoBiA'
+
+# make it suitable for caseless comparison
+my_str = my_str.casefold()
+
+# reverse the string
+rev_str = reversed(my_str)
+
+# check if the string is equal to its reverse
+if list(my_str) == list(rev_str):
+   print("The string is a palindrome.")
+else:
+   print("The string is not a palindrome.")
